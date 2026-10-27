@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رحلتي مع لغتي</title>
+<style>
+:root{--green:#147a4b;--light:#eef9f3;--pink:#f6ddea;--gold:#f2c94c;--ink:#24332d;--white:#fff;--shadow:0 12px 30px #174e3a18}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(180deg,#f5fbf7,#fff);color:var(--ink)}
+header{background:linear-gradient(135deg,#0f7044,#1d9360);color:#fff;padding:22px 7%;border-radius:0 0 30px 30px;box-shadow:var(--shadow)}
+.brand{display:flex;align-items:center;gap:14px}.passport{width:54px;height:68px;background:#0d5f3a;border-radius:9px;display:grid;place-items:center;font-size:28px;border:2px solid #fff5}.brand h1{margin:0;font-size:28px}.brand p{margin:4px 0 0;opacity:.9}
+main{max-width:1100px;margin:auto;padding:24px 18px}.welcome{display:flex;justify-content:space-between;gap:20px;align-items:center;background:#fff;border-radius:24px;padding:24px;box-shadow:var(--shadow)}.welcome h2{margin:0 0 8px;font-size:26px}.welcome p{margin:0;line-height:1.8}.btn{border:0;border-radius:16px;padding:13px 20px;font-weight:700;cursor:pointer;font-size:16px;background:var(--green);color:#fff}.btn.alt{background:#fff;color:var(--green);border:2px solid var(--green)}
+.section-title{margin:30px 0 14px;font-size:22px}.stations{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.station{background:#fff;border-radius:20px;padding:18px;text-align:center;box-shadow:var(--shadow);position:relative}.station .icon{font-size:38px}.station.locked{opacity:.55}.station.done{outline:3px solid #bce8d0}.station h3{margin:8px 0 5px}.station small{color:#64746c}.path{height:5px;background:#bfe5cf;margin:-3px 20px 0;border-radius:10px}
+.letter-card{background:linear-gradient(135deg,#fff,#f0faf4);border-radius:25px;padding:26px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1.2fr;gap:22px;align-items:center}.big-letter{font-size:120px;font-weight:900;color:var(--green);text-align:center}.sounds{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}.sound{background:#fff;border:2px solid #d7eee1;padding:10px 16px;border-radius:14px;font-size:24px;font-weight:800}.games{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.game{background:#fff;border-radius:20px;padding:20px;box-shadow:var(--shadow)}.game h3{margin-top:0}.options{display:flex;flex-wrap:wrap;gap:8px}.option{border:2px solid #dbece3;background:#fff;border-radius:12px;padding:10px 14px;cursor:pointer;font-size:20px}.option.correct{background:#dff7e9;border-color:#43a76f}.option.wrong{background:#fde7e7;border-color:#dc7777}
+.passport-card{background:#0e6d43;color:#fff;border-radius:24px;padding:22px;box-shadow:var(--shadow);margin-top:25px}.stamps{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.stamp{width:105px;height:75px;border:2px dashed #ffffff88;border-radius:14px;display:grid;place-items:center;text-align:center;font-size:13px}.stamp.on{background:#ffffff18;border-color:#f5d76e;color:#ffe68a}.progress{height:12px;background:#dceee4;border-radius:20px;overflow:hidden}.progress>div{height:100%;background:#f2c94c;width:20%}
+footer{text-align:center;padding:30px;color:#708078;font-size:14px}@media(max-width:760px){.welcome,.letter-card{grid-template-columns:1fr;display:grid}.stations{grid-template-columns:repeat(2,1fr)}.games{grid-template-columns:1fr}.welcome .btn{width:100%}.brand h1{font-size:23px}.big-letter{font-size:90px}}
+</style></head>
+<body>
+<header><div class="brand"><div class="passport">🛂</div><div><h1>رحلتي مع لغتي</h1><p>أتعلم • أكتشف • أقرأ • أنجز</p></div></div></header>
+<main>
+<section class="welcome"><div><h2>أهلًا يا بطلة! 🌷</h2><p>هيا نبدأ رحلتنا مع حرف <b>م</b> ونحصل على أول ختم في جواز التعلم.</p></div><button class="btn" onclick="document.getElementById('lesson').scrollIntoView({behavior:'smooth'})">🚀 ابدئي الرحلة</button></section>
+<h2 class="section-title">🗺️ خريطة الرحلة</h2>
+<div class="stations">
+<div class="station done"><div class="icon">🔤</div><h3>محطة الحروف</h3><small>بدأنا</small></div>
+<div class="station"><div class="icon">👂</div><h3>أسمع وأميز</h3><small>بعد إكمال الحرف</small></div>
+<div class="station locked"><div class="icon">🧩</div><h3>أبني الكلمات</h3><small>مغلقة</small></div>
+<div class="station locked"><div class="icon">📖</div><h3>أقرأ</h3><small>مغلقة</small></div>
+</div><div class="path"></div>
+<section id="lesson"><h2 class="section-title">🌿 محطة حرف م</h2><div class="letter-card"><div><div class="big-letter">م</div><button class="btn" onclick="speak('م')">🔊 اسمعي الحرف</button></div><div><h3>صوت الحرف</h3><div class="sounds"><span class="sound">مَ</span><span class="sound">مِ</span><span class="sound">مُ</span></div><h3>الصوت الطويل</h3><div class="sounds"><span class="sound">مَا</span><span class="sound">مِي</span><span class="sound">مُو</span></div><p>تعرفي على شكل الحرف وصوته، ثم انتقلي إلى التحديات.</p></div></div></section>
+<h2 class="section-title">🎮 ألعاب صغيرة</h2><div class="games">
+<div class="game"><h3>🕵🏻 اكتشفي الحرف</h3><p>اختاري الكلمات التي تحتوي على حرف م.</p><div class="options"><button class="option" onclick="check(this,true)">موز 🍌</button><button class="option" onclick="check(this,false)">باب 🚪</button><button class="option" onclick="check(this,true)">ماء 💧</button></div></div>
+<div class="game"><h3>🎧 اسمعي واختاري</h3><p>ما الحرف الذي تسمعينه؟</p><button class="btn" onclick="speak('مَ')">🔊 استمعي</button><div class="options" style="margin-top:10px"><button class="option" onclick="check(this,true)">م</button><button class="option" onclick="check(this,false)">ب</button><button class="option" onclick="check(this,false)">ر</button></div></div>
+<div class="game"><h3>🧩 رتبي الكلمة</h3><p>اضغطي الحروف بالترتيب.</p><div class="options"><button class="option" onclick="pick('م')">م</button><button class="option" onclick="pick('ا')">ا</button><button class="option" onclick="pick('م')">م</button></div><p id="word" style="font-size:24px;font-weight:800">—</p></div>
+</div>
+<section class="passport-card"><h2>🛂 جواز تعلمي</h2><p>تقدمك في رحلة حرف م</p><div class="progress"><div id="bar"></div></div><div class="stamps"><div class="stamp on">🔤<br>تعرفت على الحرف</div><div class="stamp">👂<br>ميزت الصوت</div><div class="stamp">🧩<br>بنيت كلمة</div><div class="stamp">🏆<br>أنجزت التحدي</div></div></section>
+<h2 class="section-title">👩🏻‍🏫 بوابة المعلمة</h2><div class="welcome"><div><h3>لوحة متابعة تجريبية</h3><p>عدد الطالبات: 28 • الحرف الحالي: م • إنجاز الصف: 25%</p></div><button class="btn alt" onclick="alert('هذه النسخة التجريبية. لاحقًا نضيف حسابات الطالبات والتقارير.')">📊 عرض التقرير</button></div>
+</main><footer>إعداد وتصميم: المعلمة حنان الشاعري 🌷</footer>
+<script>function speak(t){if('speechSynthesis'in window){let u=new SpeechSynthesisUtterance(t);u.lang='ar-SA';speechSynthesis.speak(u)}}function check(el,ok){el.classList.add(ok?'correct':'wrong');if(ok){document.getElementById('bar').style.width='50%'}}let w='';function pick(x){w+=x;document.getElementById('word').textContent=w;if(w==='ماما'){document.getElementById('bar').style.width='75%';alert('أحسنتِ! 🎉 كوّنتِ كلمة ماما');}} </script>
+</body></html>
